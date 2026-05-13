@@ -1,0 +1,32 @@
+SecureSeat/
+├── backend/                        # Main Node.js & Express Engine
+│   ├── src/
+│   │   ├── config/                 # DB (PostgreSQL) and Redis connections
+│   │   ├── controllers/            # Business logic (Booking, Auth, Matches)
+│   │   ├── middlewares/            # JWT Auth, Role checks, Error handling
+│   │   ├── routes/                 # API endpoints
+│   │   ├── services/               # Redis lock logic, external API calls
+│   │   └── server.js               # Application entry point
+│   ├── .env                        
+│   └── package.json                
+├── ai-service/                     # Python & FastAPI Microservice
+│   ├── app/
+│   │   ├── api/                    # FastAPI route definitions
+│   │   ├── core/                   # MediaPipe/FaceNet embedding logic
+│   │   ├── db/                     # pgvector connection and queries
+│   │   └── main.py                 # FastAPI entry point
+│   ├── .env                        
+│   └── requirements.txt            
+└── frontend/                       # React.js Frontend
+    ├── public/
+    ├── src/
+    │   ├── assets/                 
+    │   ├── components/             # Reusable UI (WebcamCapture, SeatMap)
+    │   ├── context/                # AuthContext, BookingContext
+    │   ├── pages/                  # AdminDashboard, UserPortal, SecurityScan
+    │   ├── services/               # Axios API wrappers
+    │   ├── App.jsx                 
+    │   └── main.jsx                
+    ├── index.html
+    ├── package.json
+    └── vite.config.js
