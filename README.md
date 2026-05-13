@@ -1,6 +1,7 @@
 # SecureSeat: High-Concurrency Ticket Booking & Biometric Verification System
 
-![SecureSeat Architecture](https://via.placeholder.com/1000x300?text=SecureSeat+Architecture+Diagram) ## 📌 Overview
+![SecureSeat Architecture]
+📌 Overview
 SecureSeat is a scalable, full-stack ticket booking platform designed to handle high-concurrency booking scenarios while preventing ticket scalping. It features a distributed caching mechanism to handle temporary seat locks and integrates an AI-powered facial recognition microservice to bind tickets to a user's biometric identity using vector embeddings.
 
 ## ✨ Key Features
@@ -44,9 +45,3 @@ SecureSeat is a scalable, full-stack ticket booking platform designed to handle 
 * PostgreSQL (with `pgvector` extension installed)
 * Redis Server (running locally or via Docker)
 
-### Installation
-
-**1. Clone the repository**
-```bash
-git clone [https://github.com/yourusername/SecureSeat.git](https://github.com/yourusername/SecureSeat.git)
-cd SecureSeat
